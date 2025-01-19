@@ -1,4 +1,4 @@
-/* .main-container {
+.main-container {
     box-sizing: border-box;
     width: 90%;
     max-width: 1200px;
@@ -8,8 +8,14 @@
     position: relative;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    overflow: hidden;
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
     transition: all 0.3s ease;
+}
+
+.main-container::-webkit-scrollbar {
+    display: none; /* WebKit */
 }
 
 .main-container:hover {
@@ -104,18 +110,19 @@
     color: #FFFFFF;
     transform: translateX(-50%) scale(1.1);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-} */
-
-
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
 * {
   font-family: "Quicksand", sans-serif;
 }
+
 section {
   max-width: 1180px;
   margin: 0 auto;
 }
+
 h1 {
   font-weight: 700;
   text-align: center;
@@ -123,15 +130,15 @@ h1 {
   text-transform: uppercase;
   margin: 4rem 0 0 0;
 }
+
 .list {
   background: #fff;
   display: flex;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   padding: 5rem 0;
 }
+
 .list > .product {
   width: 200px;
   float: left;
@@ -140,46 +147,48 @@ h1 {
   margin: 1%;
   position: relative;
 }
+
 .product > div {
   text-align: center;
   position: absolute;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
   bottom: 0;
   height: 0;
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
-  border-radius:4px;
+  border-radius: 4px;
 }
+
 .product:hover > div {
   position: absolute;
   height: 300px;
   background: rgba(255, 255, 255, 0.5);
 }
+
 .product > img {
   margin: 0 auto;
   display: block;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
-  border-radius:4px;
+  border-radius: 4px;
 }
+
 .product:hover > img {
-  -webkit-filter: blur(3px) saturate(1.5);
   filter: blur(3px) saturate(1.5);
 }
+
 .product > div > h2 {
   border-bottom: 1px solid #818181;
   padding: 0 0 1rem;
 }
+
 .descr {
   font-size: 0.8rem;
   padding: 2rem;
   line-height: 1.2rem;
-  font-weight:600;
+  font-weight: 600;
 }
+
 .product > div > a > p {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -191,11 +200,10 @@ h1 {
   width: 100%;
   bottom: 0;
   margin: 0 auto !important;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
+
 .product > div > a > p:hover {
-  filter:brightness(.9);
+  filter: brightness(0.9);
   letter-spacing: 4px;
 }
