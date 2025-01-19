@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url(../video/gold.mp4);
+}
+  
+main {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+    margin: auto; /* Center the main element */
+}
+  
+main h2 {
+    font-size: 2rem;
+    color: #ccae62;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+  
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+  
+.form-group label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+  
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccae62;
+    border-radius: 8px;
+    background: #f9f9f9;
+    outline: none;
+    transition: 0.3s ease;
+}
+  
+.form-group input:focus {
+    border-color: #ccae62;
+    box-shadow: 0 0 5px rgba(204, 174, 98, 0.5);
+}
+  
+button {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background: #ccae62;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+  
+button:hover {
+    background: #d8bb72;
+}
+  
+button:active {
+    transform: scale(0.98);
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+  

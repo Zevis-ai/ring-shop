@@ -1,0 +1,177 @@
+.main-container {
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 1200px;
+    height: 60vh;
+    background: linear-gradient(135deg, #CCAE62, #E6C97E);
+    margin: 50px auto;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.main-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+
+.ring-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.ring-product img {
+    max-height: 80%;
+    max-width: 80%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.ring-product:hover img {
+    transform: scale(1.1);
+}
+
+.main-container {
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 1200px;
+    height: 60vh;
+    background: linear-gradient(135deg, #CCAE62, #E6C97E);
+    margin: 50px auto;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.main-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.ring-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.ring-product img {
+    max-height: 80%;
+    max-width: 80%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.ring-product:hover img {
+    transform: scale(1.1);
+}
+
+.price2 {
+    position: absolute;
+    top: 30%;
+    left: -32%;
+    transform: translate(-50%, -50%);
+}
+
+.price2:hover {
+    background-color: rgba(0,0,0,0.7);
+    transform: translateX(-50%) scale(1.05);
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* .shop-btn2 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #ffffff0a;
+    color: #CCAE62;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+} */
+
+/* .shop-btn2:hover {
+    background-color: #CCAE62;
+    color: #FFFFFF;
+} */
+
+.prev-btn2, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.prev-btn2:hover, .next-btn:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.shop-btn2 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #ffffff35;
+    color: #050400;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+.shop-btn2:hover {
+    background-color: #090600;
+    color: #FFFFFF;
+}

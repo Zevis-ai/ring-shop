@@ -1,0 +1,150 @@
+* {
+  font-family: 'roboto';
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.conteiner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.681);
+  display: flex;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #171717;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.menu ul li a:hover,
+.menu ul li .active {
+  background: #ccae62;
+  color: white;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  background: #fefefe;
+  outline: none;
+  padding: 5px;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+  border: 0.5px solid #ccae62;
+  width: 200px;
+}
+
+.search-bar .search-icon {
+  background: #ccae62;
+  outline: none;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  border: none;
+  color: #333;
+  font-size: 1rem;
+  padding: 5.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #ccae62;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.burger span {
+  display: none;
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+@media (max-width: 749px) {
+  .menu {
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    height: calc(100vh - 60px);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu ul li {
+    margin-bottom: 15px;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}
