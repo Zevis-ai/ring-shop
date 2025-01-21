@@ -5,6 +5,7 @@
 }
 
 body {
+  /* background: url(../image/background-removebg-preview.png) ; */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -227,11 +228,23 @@ a {
   color: #171717;
 }
 
+.myp{
+  font-size: 6.5rem;
+  font-family: 'Knewave', serif;
+  font-size: 20px;
+  font-style: normal;
+  color: #080500;
+}
+
 /* --- RESPONSIVE DESIGN --- */
 
 @media screen and (max-width: 768px) {
   .menu ul {
     justify-content: center;
+  }
+
+  .myp{
+    font-size: 20px;
   }
 
   main .ring-image img {
@@ -250,10 +263,14 @@ a {
 
 
   main .video-container {
-    width: 450px;
+    /* width: 450px;
     height: 350px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
+    display: none;
+  }
+  main p {
+    font-size: 20px;
   }
 }
 
