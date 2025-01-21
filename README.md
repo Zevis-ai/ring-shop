@@ -1,4 +1,7 @@
+# I am very happy to present to you my first project in HTML CSS
+
 # ZEVI FRIEDMAN Luxury Jewelry Website
+
 
 Welcome to the **ZEVI FRIEDMAN** Jewelry website project. This is a premium e-commerce platform showcasing luxury jewelry collections.
 
